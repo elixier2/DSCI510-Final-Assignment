@@ -79,7 +79,7 @@ fig.update_traces(marker=dict(size=8, line=dict(width=2, color='DarkSlateGrey'))
 
     # Display the plot in Streamlit
 st.plotly_chart(fig)
-st.write("Fig. explanation: This bar chart shows water temperatures of cities, filterable by Region/State")")
+st.write("Fig. explanation: This bar chart shows water temperatures of cities, filterable by Region/State")
 
 def plot_city_water_pollution(data, pollution_threshold):
     # Filter data based on the pollution threshold
