@@ -16,7 +16,7 @@ import streamlit as st
 from streamlit.logger import get_logger
 
 st.title("DSCI 510 Final")
-st.title("Water pollution and water temperature analysis based on city and population")
+st.title(" 'Water pollution and water temperature analysis based on city and population' ")
 
 st.subheader("by Elisa Xia")
 
