@@ -14,8 +14,8 @@ st.write("After analyzing the data, cities with larger populations did not neces
 
 st.subheader("Q3- What difficulties did you have in completing the project?")
 
-st.write("Some challenges include dealing with incomplete or noisy data, integrating data from various sources, and developing a reliable method for real-time data analysis and visualization. Overall, there were also technical issues with software or coding errors because I realized that I had to make sure that all the coding texts matched the dataset texts. I also had to convert the formatting of my csv data into sole values because if the water temperature had the Farenheit of celsius sign, it would not be read by code. 
-")
+st.write("""Some challenges include dealing with incomplete or noisy data, integrating data from various sources, and developing a reliable method for real-time data analysis and visualization. Overall, there were also technical issues with software or coding errors because I realized that I had to make sure that all the coding texts matched the dataset texts. I also had to convert the formatting of my csv data into sole values because if the water temperature had the Farenheit of celsius sign, it would not be read by code. 
+""")
 
 st.subheader("Q4- What skills did you wish you had while you were doing the project?")
 
