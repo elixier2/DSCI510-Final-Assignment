@@ -25,5 +25,6 @@ st.subheader("An explanation of how to use your webapp: what interactivity there
 st.write("My webapp is meant to display the correlation between water temperature....")
 
 st.subheader("Any major gotchas, i.e. things that don’t work, go slowly, could be improved, etc.")
+
 st.write("Some of the 'gotchas' in my paper include not having enough data points to see if there was a correlation")
 
