@@ -5,8 +5,8 @@ st.title("Questions")
 
 st.subheader("Q1- What did you set out to study?  (i.e. what was the point of your project?  This should be close to your Milestone 1 assignment, but if you switched gears or changed things, note it here.")
 
-st.write("The project was initially set up to explore relationships between urbanization (as indicated by population) and environmental factors such as water temperature and pollution levels in cities. This study aimed to determine if more populated areas experienced higher pollution and temperature changes, potentially impacting local climates and health standards.
-")
+st.write("""The project was initially set up to explore relationships between urbanization (as indicated by population) and environmental factors such as water temperature and pollution levels in cities. This study aimed to determine if more populated areas experienced higher pollution and temperature changes, potentially impacting local climates and health standards.
+""")
 
 st.subheader("Q2- What did you Discover/what were your conclusions (i.e. what were your findings?  Were your original assumptions confirmed, etc.?")
 
