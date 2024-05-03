@@ -63,7 +63,7 @@ fig.update_traces(marker=dict(size=8, line=dict(width=2, color='DarkSlateGrey'))
 
     # Display the plot in Streamlit
 st.plotly_chart(fig)
-st.write("Fig. explanation: This bar chart shows population by cities, filterable by Region/State")
+st.write("Fig. explanation: This bar chart shows population of cities, filterable by Region/State")
 
 st.subheader("Average Water Body Temperature of Cities in different Region")
 fig = px.bar(df_region,x='city', y='average water temperature F',title="Temperature of Water Body in Cities")
@@ -79,7 +79,7 @@ fig.update_traces(marker=dict(size=8, line=dict(width=2, color='DarkSlateGrey'))
 
     # Display the plot in Streamlit
 st.plotly_chart(fig)
-st.write("")
+st.write("Fig. explanation: This bar chart shows water temperatures of cities, filterable by Region/State")")
 
 def plot_city_water_pollution(data, pollution_threshold):
     # Filter data based on the pollution threshold
@@ -90,7 +90,7 @@ def plot_city_water_pollution(data, pollution_threshold):
     fig.update_layout(
     xaxis_tickangle=-45,  # Rotate labels for better readability
     xaxis_title="City",
-    yaxis_title="Pollution",
+    yaxis_title="Water Pollution",
     hovermode="closest"  # Show tooltip for the closest point'
     )
     # Adjust the marker size to reflect the population size (optional)
@@ -112,7 +112,7 @@ pollution_threshold = st.sidebar.slider("Select Water Pollution Threshold",
 st.write(f"Visualizing Cities with Water Pollution Index Below {pollution_threshold}")
 fig = plot_city_water_pollution(data, pollution_threshold)
 st.plotly_chart(fig)
-st.write("Fig. explanation: This bar chart shows the level of water pollution ")
+st.write("Fig. explanation: This bar chart shows the level of water pollution of cities, interactive by water pollution threshold")
 
 st.sidebar.header("Select min,max, avg temp")
 temp_range = ["Min Temp","Max Temp","Avg Temp"]
@@ -125,7 +125,7 @@ dict1 = {
 }
 
 
-st.subheader("Correlation between Population and Pollution")
+st.subheader("Correlation between Population and Water Pollution")
 corr = df['WaterPollution'].corr(df['Population'])
 st.write(f"correlation coefficient between Population and Pollution : {corr}")
 plt.figure(figsize=(12, 8))
@@ -136,10 +136,10 @@ plt.title(f'Correlation of Population and Pollution')
 plt.xticks(rotation=80)  # Rotates city names to avoid overlap
 plt.tight_layout()  # Adjusts subplots to give some padding
 st.pyplot(plt)
-st.write("fig exp")
+st.write("Fig. explanation: This scatterplot graph shows the correlation between population and water pollution, along with its correlation coefficient")
 
 
-st.subheader("Correlation between Population and Water Body Temperature")
+st.subheader("Correlation between Population and Water Temperature")
 corr = df['Population'].corr(df[dict1[select_temp]])
 st.write(f"correlation coefficient between {dict1[select_temp]} and population : {corr}")
 plt.figure(figsize=(12, 8))
@@ -150,9 +150,9 @@ plt.title(f'Correlation of {dict1[select_temp]} and population')
 plt.xticks(rotation=80)  # Rotates city names to avoid overlap
 plt.tight_layout()  # Adjusts subplots to give some padding
 st.pyplot(plt)
-st.write("fig exp")
+st.write("Fig. explanation: This scatterplot graph shows the correlation between population and water temperature, along with its correlation coefficient")
 
-st.subheader("Correlation between Pollution and Temperature")
+st.subheader("Correlation between Water Pollution and Water Temperature")
 corr = df['WaterPollution'].corr(df[dict1[select_temp]])
 st.write(f"correlation coefficient between {dict1[select_temp]} and Pollution : {corr}")
 plt.figure(figsize=(12, 8))
@@ -163,5 +163,5 @@ plt.title(f'Correlation of {dict1[select_temp]} and Pollution')
 plt.xticks(rotation=80)  # Rotates city names to avoid overlap
 plt.tight_layout()  # Adjusts subplots to give some padding
 st.pyplot(plt)
-st.write("Fig. exp: this chart shows  ")
+st.write(""Fig. explanation: This scatterplot graph shows the correlation between water pollution and water temperature, along with its correlation coefficient")
 
