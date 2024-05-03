@@ -163,5 +163,5 @@ plt.title(f'Correlation of {dict1[select_temp]} and Pollution')
 plt.xticks(rotation=80)  # Rotates city names to avoid overlap
 plt.tight_layout()  # Adjusts subplots to give some padding
 st.pyplot(plt)
-st.write(""Fig. explanation: This scatterplot graph shows the correlation between water pollution and water temperature, along with its correlation coefficient")
+st.write("Fig. explanation: This scatterplot graph shows the correlation between water pollution and water temperature, along with its correlation coefficient")
 
