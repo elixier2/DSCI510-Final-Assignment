@@ -19,8 +19,8 @@ st.write("""Some challenges include dealing with incomplete or noisy data, integ
 
 st.subheader("Q4- What skills did you wish you had while you were doing the project?")
 
-st.write("During the project, I wish I had the stronger skill in making my web app more dynamic and interactive. For example, I wish I was able to add a mapping visualization of the cities rather than just having some bar graphs. 
-")
+st.write("""During the project, I wish I had the stronger skill in making my web app more dynamic and interactive. For example, I wish I was able to add a mapping visualization of the cities rather than just having some bar graphs. 
+""")
 
 st.subheader("Q5- What would you do “next” to expand or augment the project?")
 
