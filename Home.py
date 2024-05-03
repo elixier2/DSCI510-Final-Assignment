@@ -15,14 +15,15 @@
 import streamlit as st
 from streamlit.logger import get_logger
 
+st.title("DSCI 510 Final")
 st.title("Water pollution and water temperature analysis based on city and population")
 
 st.subheader("by Elisa Xia")
 
 st.subheader("An explanation of how to use your webapp: what interactivity there is, what the plots/charts mean, what your conclusions were, etc.")
 
-st.write("")
+st.write("My webapp is meant to display the correlation between water temperature....")
 
 st.subheader("Any major gotchas, i.e. things that don’t work, go slowly, could be improved, etc.")
-st.write("")
+st.write("Some of the 'gotchas' in my paper include not having enough data points to see if there was a correlation")
 
