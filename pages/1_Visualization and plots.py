@@ -63,7 +63,7 @@ fig.update_traces(marker=dict(size=8, line=dict(width=2, color='DarkSlateGrey'))
 
     # Display the plot in Streamlit
 st.plotly_chart(fig)
-st.write("fig exp")
+st.write("Fig. explanation: This bar chart shows population by cities, filterable by Region/State")
 
 st.subheader("Average Water Body Temperature of Cities in different Region")
 fig = px.bar(df_region,x='city', y='average water temperature F',title="Temperature of Water Body in Cities")
@@ -79,7 +79,7 @@ fig.update_traces(marker=dict(size=8, line=dict(width=2, color='DarkSlateGrey'))
 
     # Display the plot in Streamlit
 st.plotly_chart(fig)
-st.write("fig exp")
+st.write("")
 
 def plot_city_water_pollution(data, pollution_threshold):
     # Filter data based on the pollution threshold
@@ -90,7 +90,7 @@ def plot_city_water_pollution(data, pollution_threshold):
     fig.update_layout(
     xaxis_tickangle=-45,  # Rotate labels for better readability
     xaxis_title="City",
-    yaxis_title="Population",
+    yaxis_title="Pollution",
     hovermode="closest"  # Show tooltip for the closest point'
     )
     # Adjust the marker size to reflect the population size (optional)
@@ -112,7 +112,7 @@ pollution_threshold = st.sidebar.slider("Select Water Pollution Threshold",
 st.write(f"Visualizing Cities with Water Pollution Index Below {pollution_threshold}")
 fig = plot_city_water_pollution(data, pollution_threshold)
 st.plotly_chart(fig)
-st.write("fig exp")
+st.write("Fig. explanation: This bar chart shows the level of water pollution ")
 
 st.sidebar.header("Select min,max, avg temp")
 temp_range = ["Min Temp","Max Temp","Avg Temp"]
