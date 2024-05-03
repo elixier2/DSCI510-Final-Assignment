@@ -24,7 +24,6 @@ st.write("""During the project, I wish I had the stronger skill in making my web
 
 st.subheader("Q5- What would you do “next” to expand or augment the project?")
 
-st.write("
-To expand the project, I was considering incorporating additional environmental factors such as air quality and land use data. Another direction could be to apply machine learning models to predict future pollution levels and temperatures based on current trends and urban development policies.
-")
+st.write("""To expand the project, I was considering incorporating additional environmental factors such as air quality and land use data. Another direction could be to apply machine learning models to predict future pollution levels and temperatures based on current trends and urban development policies.
+""")
 
