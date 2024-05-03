@@ -17,6 +17,6 @@ from streamlit.logger import get_logger
 
 st.title("Water Poillution Analysis based on temperature,population and pollution")
 
-st.subheader("by Xia")
+st.subheader("by Elisa Xia")
 
 st.write("responsde")
