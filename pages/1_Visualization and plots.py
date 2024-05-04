@@ -98,7 +98,7 @@ def plot_city_water_pollution(data, pollution_threshold):
     return fig
 
 
-st.title("City Water Pollution Data Visualization")
+st.subheader("Water Pollution Levels of Cities")
 
 # Load data
 data = load_data('city_temp_population_pollution_data.csv')
