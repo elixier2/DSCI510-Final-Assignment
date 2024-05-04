@@ -106,7 +106,7 @@ data = load_data('city_temp_population_pollution_data.csv')
 st.sidebar.header("Select Water Pollution Threshold")
 
 # Interactive slider to select the pollution threshold
-pollution_threshold = st.sidebar.slider("Select Water Pollution Threshold",
+pollution_threshold = st.sidebar.slider("Slide to select threshold",
                                         float(data['WaterPollution'].min()), 
                                         float(data['WaterPollution'].max()), 
                                         step=0.1,value=40.0)
