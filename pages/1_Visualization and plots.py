@@ -39,6 +39,7 @@ def filter(string):
     return string
 
 st.title("Visualization and charts")
+st.title("Bar graphs")
 df['Region'] = df['Region'].apply(filter)
 
 list_regions = list(df['Region'].unique())
@@ -127,6 +128,7 @@ dict1 = {
     "Avg Temp": "average water temperature F"
 }
 
+st.title("Correlation/scatterplots")
 
 st.subheader("Correlation between Population and Water Pollution")
 corr = df['WaterPollution'].corr(df['Population'])
