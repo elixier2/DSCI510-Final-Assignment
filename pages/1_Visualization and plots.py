@@ -65,7 +65,7 @@ fig.update_traces(marker=dict(size=8, line=dict(width=2, color='DarkSlateGrey'))
 st.plotly_chart(fig)
 st.write("Fig. explanation: This bar chart shows population of cities, filterable by Region/State")
 
-st.subheader("Average Water Temperature of Cities in different Region")
+st.subheader("Average Water Temperature of Cities in different regions")
 fig = px.bar(df_region,x='city', y='average water temperature F',title="Temperature of Water in Cities")
 fig.update_layout(
     xaxis_tickangle=-45,  # Rotate labels for better readability
