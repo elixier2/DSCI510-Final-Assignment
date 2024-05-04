@@ -65,12 +65,12 @@ fig.update_traces(marker=dict(size=8, line=dict(width=2, color='DarkSlateGrey'))
 st.plotly_chart(fig)
 st.write("Fig. explanation: This bar chart shows population of cities, filterable by Region/State")
 
-st.subheader("Average Water Temperature of Cities in different regions")
+st.subheader("Average Water Body Temperature of Cities in different regions")
 fig = px.bar(df_region,x='city', y='average water temperature F',title="Temperature of Water in Cities")
 fig.update_layout(
     xaxis_tickangle=-45,  # Rotate labels for better readability
     xaxis_title="City",
-    yaxis_title="Water Temperature",
+    yaxis_title="Average Water Temperature",
     hovermode="closest"  # Show tooltip for the closest point
 )
 
@@ -79,7 +79,7 @@ fig.update_traces(marker=dict(size=8, line=dict(width=2, color='DarkSlateGrey'))
 
     # Display the plot in Streamlit
 st.plotly_chart(fig)
-st.write("Fig. explanation: This bar chart shows water temperatures of cities, filterable by Region/State")
+st.write("Fig. explanation: This bar chart shows water body temperatures of cities, filterable by Region/State")
 
 def plot_city_water_pollution(data, pollution_threshold):
     # Filter data based on the pollution threshold
